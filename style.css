@@ -1,5 +1,27 @@
+.body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y:scroll;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+}
+
+.___{
+    height: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .__0{
-    margin: 10%;
+    scroll-snap-align: start;
+    margin: 1em;
     background: hotpink;
     width: 200px;
     height: 200px;
@@ -66,7 +88,8 @@
 /*  */
 
 .__1{
-    margin: 10%;
+    scroll-snap-align: start;
+    margin:1em;
     display: flex;
     justify-content:flex-start;
     align-content:flex-start;
@@ -129,7 +152,8 @@
 
 
 .__2{
-    margin: 10%;
+    scroll-snap-align: start;
+    margin:1em;
     height: 150px;
     width: 150px;
     
@@ -138,7 +162,7 @@
 .__2 .__{
     position: relative;
     top: 40%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
 .__2 .__ div{
